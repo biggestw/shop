@@ -1,0 +1,33 @@
+//设置本地用户名和邮箱
+git config --global user.name "用户名"
+git config --global user.email "邮箱地址"
+
+//仓库初始化
+//生成 .git目录
+git init   
+
+// Git 常用指令操作
+git status  查看当前状态
+git add 文件名     添加到缓存区
+git commit -m "注释内容"   提交至版本库
+
+
+//查看日志
+
+git log  /  git log --pretty=oneline
+
+//回退操作
+git reset --hard  版本号
+
+//回到之前最新版本
+git reflog   查看历史操作获取commit id
+再使用 git reset commit id 回退
+
+// 克隆远程仓库
+git clone  仓库地址
+
+//提交远程仓库
+git push
+
+//拉取远程仓库
+git pull
